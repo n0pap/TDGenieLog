@@ -17,11 +17,17 @@ public class Compte //Classe d'un compte général
 		_Solde+=rajout;
 	}
 	
+	//Méthode de retrait d'argent sur le compte
+	public void Retrait(double retrait)
+	{
+		_Solde-=retrait;
+	}
 	//Méthode pour consulter le solde sur le compte
 	public double Solde()
 	{
 		return _Solde; //et encore
 	}
+	
 
 }
 
