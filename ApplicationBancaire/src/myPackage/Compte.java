@@ -3,7 +3,7 @@ package myPackage;
 public class Compte //Classe d'un compte général
 { 
 
-	private double _Solde; 
+	private double _Solde; //
 	
 	//Constructeur
 	public Compte(double Solde)
