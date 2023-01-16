@@ -1,15 +1,17 @@
 package myPackage;
 
-public class CompteEpargne extends Compte
+public class CompteEpargne extends Compte //CompteEpargne dérive de Compte
 {
 	private double _tauxInteret=3.2*0.01; //1.032 3.2% 0.032
 	//private  float _SoldeE;
 	
+	//Constructeur
 	public CompteEpargne(float SoldeE)
 	{
 		super(SoldeE); 
 	}
 	
+	//Méthode de rémunération de l'épargne
 	public void RemunerationEpagne()
 	{
 		System.out.println("	---Rémunération---	");
