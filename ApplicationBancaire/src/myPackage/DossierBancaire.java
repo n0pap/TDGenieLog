@@ -2,7 +2,7 @@ package myPackage;
 
 public class DossierBancaire 
 {
-	private Compte _CompteCourant;
+	private Compte _CompteCourant; //
 	private CompteEpargne _CompteEpargne;
 	
 	private double _interCourant;
