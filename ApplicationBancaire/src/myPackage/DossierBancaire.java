@@ -63,16 +63,9 @@ public class DossierBancaire
     //Méthode de retrait d'argent sur le compte courant 
     public void retrait(double retrait)
     {
-    	try
-    	{
-    		_CompteCourant.Retrait(retrait);
-        	affichageDossierBancaire();
-    	}
-        catch(Exception ex)
-    	{
-            System.out.println(ex.getMessage());
-        }
-    	
+
+    	_CompteCourant.Retrait(retrait);
+        affichageDossierBancaire();	
     }
     
     

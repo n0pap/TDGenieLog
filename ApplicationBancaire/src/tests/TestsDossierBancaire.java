@@ -41,6 +41,27 @@ public class TestsDossierBancaire {
 		assertEquals(100,somme,0);
 	}
 	
+	@Test  
+	public void testRetrait() 
+	{
+		System.out.println("---------testRetrait---------");
+		DossierBancaire dossier=new DossierBancaire();
+		dossier.deposer(100);
+		boolean thrown=false;
+		try
+		{
+			dossier.retrait(200);
+		}
+		catch(Exception e)
+		{
+			thrown =true;
+		}
+		assertTrue(thrown);
+		
+		
+		
+	}
+	
 	
 
 }
