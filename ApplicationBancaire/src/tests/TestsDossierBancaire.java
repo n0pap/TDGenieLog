@@ -20,13 +20,25 @@ public class TestsDossierBancaire {
 	@Test  
 	public void testRemunerer() 
 	{
+		System.out.println("---------testRemunerer---------");
+		DossierBancaire dossier=new DossierBancaire();
+		dossier.deposer(100);
 		
+		double taux=3.2*0.01;
+		double solde_recalcule=dossier.getEpargne().Solde()+dossier.getEpargne().Solde()*taux;
+		
+		dossier.remunerer();
+		assertEquals(dossier.getEpargne().Solde(),solde_recalcule,0);
 	}
 	
 	@Test  
 	public void testTotal() 
 	{
-		
+		System.out.println("---------testTotal---------");
+		DossierBancaire dossier=new DossierBancaire();
+		dossier.deposer(100);
+		double somme=dossier.getCourant().Solde()+dossier.getEpargne().Solde();
+		assertEquals(100,somme,0);
 	}
 	
 	
