@@ -54,6 +54,13 @@ public class DossierBancaire
     	System.out.println("Total : "+get_solde()+"€");
     }
     
+    public void retrait(double retrait)
+    {
+    	_CompteCourant.Retrait(retrait);
+    	affichageDossierBancaire();
+    }
+    
+    
     
 }
 

@@ -7,7 +7,7 @@ public class CompteEpargne extends Compte
 	
 	public CompteEpargne(float SoldeE)
 	{
-		super(SoldeE); //Modification fictive
+		super(SoldeE); 
 	}
 	
 	public void RemunerationEpagne()
