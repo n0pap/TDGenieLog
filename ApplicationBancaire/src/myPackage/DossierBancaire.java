@@ -15,6 +15,7 @@ public class DossierBancaire
     	_CompteEpargne=new CompteEpargne(0);
     }
 
+    //Méthode pour déposer de l'argent sur les comptes du dossier
     public void deposer(float value) 
     {	
     	_interCourant=0.4*value; 
@@ -26,27 +27,32 @@ public class DossierBancaire
     	affichageDossierBancaire();
     }
     
+    //Méthode pour obtenir le total des comptes
     public double get_solde() 
     {
     	return _CompteCourant.Solde() + _CompteEpargne.Solde();
     }
     
+    //Méthode de rémunération des épargnes
     public void remunerer() 
     {
     	_CompteEpargne.RemunerationEpagne();
     	affichageDossierBancaire();
     }
     
+    //Méthode pour récupérer le compte d'épargne du dossier bancaire
     public Compte getEpargne()
     {
     	return _CompteEpargne;
     }
     
+    //Méthode pour récupérer le compte courrant du dossier bancaire
     public Compte getCourant()
     {
     	return _CompteCourant;
     }
     
+    //Méthode d'affichage dans la console : utile aux developpeurs
     public void affichageDossierBancaire()
     {
     	System.out.println("---------Dossier Bancaire---------");
@@ -54,6 +60,7 @@ public class DossierBancaire
     	System.out.println("Total : "+get_solde()+"€");
     }
     
+    //Méthode de retrait d'argent sur le compte courant 
     public void retrait(double retrait)
     {
     	_CompteCourant.Retrait(retrait);
