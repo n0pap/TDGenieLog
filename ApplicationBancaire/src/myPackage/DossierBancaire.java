@@ -3,30 +3,32 @@ package myPackage;
 public class DossierBancaire {
 
 	private Compte _CompteCourant;
-	private CompteEpargne _CompteEpargne;
+	
 
 	// Constructeur
-	public DossierBancaire() {
+	public DossierBancaire()
+	{
 		_CompteCourant = new Compte(0);
-		_CompteEpargne = new CompteEpargne(0);
+		
 	}
 
-	public void deposer(double value) {
+	//M√©thode pour d√©poser de l'argent sur le compte
+	public void deposer(double value) 
+	{
 		_CompteCourant.AjoutSolde(0.4 * value);
-		_CompteEpargne.AjoutSolde(0.6 * value);
-		
-		System.out.println("Courant : " + _CompteCourant.Solde() + ", Èpargne : " + _CompteEpargne.Solde());
 	}
 
-	public double get_solde() {
-		System.out.println("Courant : " + _CompteCourant.Solde() + ", Èpargne : " + _CompteEpargne.Solde());
-		return _CompteCourant.Solde() + _CompteEpargne.Solde();
+	//M√©thode pour plus tard...
+	public double get_solde() 
+	{
+		return 0;
+		
 	}
 
-	public void remunerer() {
-		_CompteEpargne.RemunerationEpagne();
+	//M√©thode pour plus tard
+	public void remunerer() 
+	{
 		
-		System.out.println("Courant : " + _CompteCourant.Solde() + ", Èpargne : " + _CompteEpargne.Solde());
 	}
 
 }

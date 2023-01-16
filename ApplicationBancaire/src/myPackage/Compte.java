@@ -1,20 +1,27 @@
 package myPackage;
 
-public class Compte { // truc en plus
+public class Compte //Classe d'un compte général
+{ 
 
-	private double _Solde;
-	// je teste un truc et encore un autre
-
-	public Compte(double Solde) {
-		_Solde = Solde;
+	private double _Solde; 
+	
+	//Constructeur
+	public Compte(double Solde)
+	{
+		_Solde=Solde;
 	}
-
-	public void AjoutSolde(double d) {
-		_Solde += d;
+	
+	//Méthode d'ajout d'argent sur le compte
+	public void AjoutSolde(double rajout)
+	{
+		_Solde+=rajout;
 	}
-
-	public double Solde() {
-		return _Solde; // et encore
+	
+	//Méthode pour consulter le solde sur le compte
+	public double Solde()
+	{
+		return _Solde; //et encore
 	}
 
 }
+
